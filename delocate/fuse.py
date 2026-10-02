@@ -87,7 +87,7 @@ _RE_LIPO_UNKNOWN_FILE_STDERR = re.compile(
     r"fatal error: (?P<program>.+): "
     r"can't figure out the architecture type of: (?P<file>.+)"
     r"|"
-    r"warning: not a mach-o(.|\n)*no eligible inputs found"
+    r".*no eligible inputs found$"
     r")", re.MULTILINE
 )
 
